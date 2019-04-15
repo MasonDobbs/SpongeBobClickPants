@@ -56,7 +56,8 @@ class App extends Component {
     const randomArray = this.random();
     if (this.state.lost) {
       return <Loser />
-    } else if (this.state.win) {
+    } 
+    if (this.state.win) {
       return <Win />
     }
     return (
